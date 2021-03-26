@@ -1,5 +1,5 @@
 /* - - - - - GLOBAL VARIABLES - - - - - */
---root{
+:root{
   --primary-1 : hsl(179, 62%, 43%); /*cyan*/
   --primary-2 : hsl(71, 73%, 54%);  /*bright yellow*/
   --neutral-1 : hsl(204, 43%, 93%); /*light gray*/
@@ -15,11 +15,24 @@ ul li { list-style: none; }
 
 body {
   font-size: 16px;
+  background-color: #E6EFF6;
 }
+/* - - - - - PAGE CONTAINER - - - - - */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 16px);
+  outline: 2px red dashed;
 
-/* - - - - - ABOUT AREA - - - - - */
+  /* - - - - - MAIN - - - - - */
 
-/* - - - - - SUBSCRIBE AREA - - - - - */
+    /* - - - - - ABOUT AREA - - - - - */
 
-/* - - - - - BENEFITS AREA - - - - - */
+    /* - - - - - SUBSCRIBE AREA - - - - - */
+
+    /* - - - - - BENEFITS AREA - - - - - */
+
+  /* - - - - - FOOTER - - - - - */
+
+}
 

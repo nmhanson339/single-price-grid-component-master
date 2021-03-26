@@ -1,3 +1,15 @@
+/* - - - - - GLOBAL VARIABLES - - - - - */
+:root {
+  --primary-1: hsl(179, 62%, 43%);
+  /*cyan*/
+  --primary-2: hsl(71, 73%, 54%);
+  /*bright yellow*/
+  --neutral-1: hsl(204, 43%, 93%);
+  /*light gray*/
+  --neutral-2: hsl(218, 22%, 67%);
+  /*grayish blue*/
+}
+
 /* - - - - - GENERAL STYLES - - - - - */
 * {
   -webkit-box-sizing: border-box;
@@ -19,5 +31,28 @@ ul li {
 
 .attribution a {
   color: #3e52a3;
+}
+
+body {
+  font-size: 16px;
+  background-color: #E6EFF6;
+}
+
+/* - - - - - PAGE CONTAINER - - - - - */
+.page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100vh - 16px);
+  outline: 2px red dashed;
+  /* - - - - - MAIN - - - - - */
+  /* - - - - - ABOUT AREA - - - - - */
+  /* - - - - - SUBSCRIBE AREA - - - - - */
+  /* - - - - - BENEFITS AREA - - - - - */
+  /* - - - - - FOOTER - - - - - */
 }
 /*# sourceMappingURL=style.css.map */
