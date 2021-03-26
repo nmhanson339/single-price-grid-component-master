@@ -17,6 +17,7 @@ body {
   font-size: 16px;
   background-color: #E6EFF6;
 }
+
 /* - - - - - PAGE CONTAINER - - - - - */
 .page-container {
   display: flex;
@@ -25,14 +26,40 @@ body {
   outline: 2px red dashed;
 
   /* - - - - - MAIN - - - - - */
+  main {
+    display: grid;
+    flex: 1;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 0.45fr 0.55fr;
+    grid-template-areas: 
+    "a a a a a a a a a a a a"
+    "s s s s s s b b b b b b"
+    ;
+ 
+    section {
+      padding: 32px;
+      outline: 2px dashed goldenrod;
+    }
 
     /* - - - - - ABOUT AREA - - - - - */
+    .about {
+      grid-area: a;
+    }
 
     /* - - - - - SUBSCRIBE AREA - - - - - */
+    .subscribe {
+      grid-area: s;
+    }
 
     /* - - - - - BENEFITS AREA - - - - - */
+    .benefits {
+      grid-area: b;
+    }
+  }
 
   /* - - - - - FOOTER - - - - - */
+  footer {
+    // margin-top: 8px;
+  }
 
 }
-

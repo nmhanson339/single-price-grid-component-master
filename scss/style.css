@@ -50,9 +50,48 @@ body {
   height: calc(100vh - 16px);
   outline: 2px red dashed;
   /* - - - - - MAIN - - - - - */
+  /* - - - - - FOOTER - - - - - */
+}
+
+.page-container main {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 0.45fr 0.55fr;
+      grid-template-rows: 0.45fr 0.55fr;
+      grid-template-areas: "a a a a a a a a a a a a" "s s s s s s b b b b b b";
   /* - - - - - ABOUT AREA - - - - - */
   /* - - - - - SUBSCRIBE AREA - - - - - */
   /* - - - - - BENEFITS AREA - - - - - */
-  /* - - - - - FOOTER - - - - - */
+}
+
+.page-container main section {
+  padding: 32px;
+  outline: 2px dashed goldenrod;
+}
+
+.page-container main .about {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: a;
+}
+
+.page-container main .subscribe {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: s;
+}
+
+.page-container main .benefits {
+  -ms-grid-row: 2;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-area: b;
 }
 /*# sourceMappingURL=style.css.map */
