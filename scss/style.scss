@@ -1,6 +1,25 @@
+/* - - - - - GLOBAL VARIABLES - - - - - */
+--root{
+  --primary-1 : hsl(179, 62%, 43%); /*cyan*/
+  --primary-2 : hsl(71, 73%, 54%);  /*bright yellow*/
+  --neutral-1 : hsl(204, 43%, 93%); /*light gray*/
+  --neutral-2 : hsl(218, 22%, 67%); /*grayish blue*/
+}
+
 /* - - - - - GENERAL STYLES - - - - - */
 * { box-sizing: border-box; }
 a { text-decoration: none; }
 ul li { list-style: none; }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  font-size: 16px;
+}
+
+/* - - - - - ABOUT AREA - - - - - */
+
+/* - - - - - SUBSCRIBE AREA - - - - - */
+
+/* - - - - - BENEFITS AREA - - - - - */
+
