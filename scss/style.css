@@ -1,4 +1,23 @@
 /* - - - - - GENERAL STYLES - - - - - */
-* { box-sizing: border-box; }
-a { text-decoration: none; }
-ul li { list-style: none; }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
