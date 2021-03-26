@@ -1,9 +1,22 @@
+// LOCAL FONTS
+@font-face {
+  font-family: "Karla";
+  src: url("./../assets/font/Karla-Regular.ttf")
+    format("woff");
+  /* Modern Browsers */
+}
+
+// REMOTE FONTS
+// @import
+// url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
 /* - - - - - GLOBAL VARIABLES - - - - - */
 :root{
   --primary-1 : hsl(179, 62%, 43%); /*cyan*/
   --primary-2 : hsl(71, 73%, 54%);  /*bright yellow*/
   --neutral-1 : hsl(204, 43%, 93%); /*light gray*/
   --neutral-2 : hsl(218, 22%, 67%); /*grayish blue*/
+  // --other-2: hsl(179, 47%, 52%); /*lighter cyan*/
 }
 
 /* - - - - - GENERAL STYLES - - - - - */
@@ -16,6 +29,7 @@ ul li { list-style: none; }
 body {
   font-size: 16px;
   background-color: #E6EFF6;
+  font-family: 'Karla', sans-serif;
 }
 
 /* - - - - - PAGE CONTAINER - - - - - */
@@ -44,6 +58,10 @@ body {
     /* - - - - - ABOUT AREA - - - - - */
     .about {
       grid-area: a;
+      
+      h1{
+        color: p
+      }
     }
 
     /* - - - - - SUBSCRIBE AREA - - - - - */
