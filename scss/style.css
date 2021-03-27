@@ -125,7 +125,7 @@ body {
 }
 
 .page-container main .subscribe p:first-of-type {
-  color: var(--neutral-2);
+  color: lightgray;
 }
 
 .page-container main .subscribe p:first-of-type span {
@@ -150,5 +150,14 @@ body {
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;
   grid-area: b;
+  background-color: #4bbebc;
+}
+
+.page-container main .benefits h3 {
+  color: white;
+}
+
+.page-container main .benefits ul {
+  color: lightgray;
 }
 /*# sourceMappingURL=style.css.map */
