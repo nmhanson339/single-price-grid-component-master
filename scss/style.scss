@@ -1,8 +1,7 @@
 // LOCAL FONTS
 @font-face {
   font-family: "Karla";
-  src: url("./../assets/font/Karla-Regular.ttf")
-    format("woff");
+  src: url("./../assets/font/Karla-Regular.ttf") format("woff");
   /* Modern Browsers */
 }
 
@@ -11,25 +10,40 @@
 // url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 /* - - - - - GLOBAL VARIABLES - - - - - */
-:root{
-  --primary-1 : hsl(179, 62%, 43%); /*cyan*/
-  --primary-2 : hsl(71, 73%, 54%);  /*bright yellow*/
-  --neutral-1 : hsl(204, 43%, 93%); /*light gray*/
-  --neutral-2 : hsl(218, 22%, 67%); /*grayish blue*/
+:root {
+  --primary-1: hsl(179, 62%, 43%); /*cyan*/
+  --primary-2: hsl(71, 73%, 54%); /*bright yellow*/
+  --neutral-1: hsl(204, 43%, 93%); /*light gray*/
+  --neutral-2: hsl(218, 22%, 67%); /*grayish blue*/
   // --other-2: hsl(179, 47%, 52%); /*lighter cyan*/
 }
 
 /* - - - - - GENERAL STYLES - - - - - */
-* { box-sizing: border-box; }
-a { text-decoration: none; }
-ul li { list-style: none; }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 body {
   font-size: 16px;
-  background-color: #E6EFF6;
-  font-family: 'Karla', sans-serif;
+  background-color: #e6eff6;
+  font-family: "Karla", sans-serif;
 }
 
 /* - - - - - PAGE CONTAINER - - - - - */
@@ -43,14 +57,17 @@ body {
   main {
     display: grid;
     flex: 1;
-    grid-template-columns: repeat(12, 1fr);
+    margin: auto;
+    max-height: 60%;
     grid-template-rows: 0.45fr 0.55fr;
-    grid-template-areas: 
-    "a a a a a a a a a a a a"
-    "s s s s s s b b b b b b"
-    ;
- 
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "a a a  a a a"
+      "s s s  b b b";
+
     section {
+      display: flex;
+      flex-direction: column;
       padding: 32px;
       outline: 2px dashed goldenrod;
     }
@@ -58,15 +75,18 @@ body {
     /* - - - - - ABOUT AREA - - - - - */
     .about {
       grid-area: a;
-      
-      h1{
-        color: p
+
+      h1 {
+        color: p;
       }
     }
 
     /* - - - - - SUBSCRIBE AREA - - - - - */
     .subscribe {
       grid-area: s;
+      p span {
+        font-size: xx-large;
+      }
     }
 
     /* - - - - - BENEFITS AREA - - - - - */
@@ -79,5 +99,4 @@ body {
   footer {
     // margin-top: 8px;
   }
-
 }
