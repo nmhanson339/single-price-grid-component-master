@@ -45,7 +45,7 @@ ul li {
 
 body {
   font-size: 16px;
-  background-color: #e6eff6;
+  background-color: var(--neutral-1);
   font-family: "Karla", sans-serif;
 }
 
@@ -99,10 +99,19 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-area: a;
+  background-color: white;
 }
 
 .page-container main .about h1 {
-  color: p;
+  color: var(--primary-1);
+}
+
+.page-container main .about h3 {
+  color: var(--primary-2);
+}
+
+.page-container main .about p {
+  color: var(--neutral-2);
 }
 
 .page-container main .subscribe {
