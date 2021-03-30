@@ -15,7 +15,7 @@
   --primary-2: hsl(71, 73%, 54%); /*bright yellow*/
   --neutral-1: hsl(204, 43%, 93%); /*light gray*/
   --neutral-2: hsl(218, 22%, 67%); /*grayish blue*/
-  // --other-2: hsl(179, 47%, 52%); /*lighter cyan*/
+  --primary-1-light: hsl(179, 47%, 52%); /*lighter cyan*/
 }
 
 /* - - - - - GENERAL STYLES - - - - - */
@@ -44,6 +44,10 @@ body {
   font-size: 16px;
   background-color: var(--neutral-1);
   font-family: "Karla", sans-serif;
+
+  @media screen and (max-width: 360px) {
+    margin: 0;
+  }
 }
 
 /* - - - - - PAGE CONTAINER - - - - - */
@@ -54,83 +58,128 @@ body {
 
   /* - - - - - MAIN - - - - - */
   main {
-    display: grid;
-    grid-template-rows: 45% 55%;
-    align-self: center;
+    display: flex;
     margin: auto 0;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:
-      "a a a  a a a"
-      "s s s  b b b";
-    border-radius: 8px;
-    overflow: hidden;
+    align-self: center;
+    justify-content: center;
 
-    section {
-      display: flex;
-      flex-direction: column;
-      padding: 32px;
-    }
+    /* - - - - - MAIN-GRID - - - - - */
+    .main-grid {
+      display: grid;
+      grid-template-rows: 45% 55%;
+      align-self: center;
+      margin: auto;
+      width: 84%;
+      min-width: 320px; // iPhone 5
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:
+        "a a a  a a a"
+        "s s s  b b b";
+      border-radius: 8px;
+      overflow: hidden;
 
-    /* - - - - - ABOUT AREA - - - - - */
-    .about {
-      grid-area: a;
-      background-color: white;
-      h1 {
-        color: var(--primary-1);
+      section {
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
       }
-      h3 {
-        color: var(--primary-2);
-      }
-      p {
-        color: var(--neutral-2);
-        &:first-of-type {
+
+      /* - - - - - ABOUT AREA - - - - - */
+      .about {
+        grid-area: a;
+        background-color: white;
+        h1 {
+          color: var(--primary-1);
+        }
+        h3 {
+          color: var(--primary-2);
+        }
+        p {
+          color: var(--neutral-2);
           margin-top: 0;
+          line-height: 1.5;
         }
       }
-    }
 
-    /* - - - - - SUBSCRIBE AREA - - - - - */
-    .subscribe {
-      grid-area: s;
-      color: white;
-      font-weight: 700;
-      background-color: var(--primary-1);
-      p {
-        margin-top: 0;
-        &:first-of-type {
-          color: var(--neutral-1); // Alternative color: light-gray
-          span {
-            font-size: xx-large;
-            font-weight: 700;
-            color: white;
-            margin-right: 10px;
+      /* - - - - - SUBSCRIBE AREA - - - - - */
+      .subscribe {
+        grid-area: s;
+        color: white;
+        font-weight: 500;
+        background-color: var(--primary-1);
+
+        p {
+          margin-top: 0;
+          &:first-of-type {
+            sup {
+              font-size: inherit;
+              font-weight: normal;
+              color: lightgray;
+            }
+            span {
+              font-size: xx-large;
+              font-weight: 700;
+              color: white;
+              margin-right: 10px;
+            }
+          }
+        }
+
+        button.call-to-action {
+          color: white;
+          font-size: inherit;
+          font-weight: 700;
+          padding: 16px;
+          margin-top: 16px;
+          border-radius: 5px;
+          border: transparent;
+          background-color: var(--primary-2);
+          box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
+          -webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      /* - - - - - BENEFITS AREA - - - - - */
+      .benefits {
+        grid-area: b;
+        color: white;
+        background-color: var(--primary-1-light);
+      }
+
+      /* - - - - - MAIN-GRID MEDIA QUERY - - - - - */
+      @media screen and (max-width: 576px) {
+        & {
+          grid-template-rows: 37% 31.5% 31.5%;
+          grid-template-columns: 1fr;
+          grid-template:
+            "a"
+            "s"
+            "b";
+
+          section {
+            h3 {
+              margin-top: 0;
+            }
+            &.about {
+              p br {
+                display: none;
+              }
+            }
           }
         }
       }
-      button.call-to-action {
-        color: white;
-        font-weight: 700;
-        padding: 16px;
-        margin-top: 16px;
-        border-radius: 5px;
-        border: transparent;
-        background-color: var(--primary-2);
-        box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
-        -webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
-        -moz-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
-      }
-    }
 
-    /* - - - - - BENEFITS AREA - - - - - */
-    .benefits {
-      grid-area: b;
-      color: white;
-      background-color: hsl(179, 47%, 52%);
+      @media screen and (max-width: 360px) {
+        & {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          border-radius: 0;
+        }
+      }
     }
   }
 
   /* - - - - - FOOTER - - - - - */
-  footer {
-    //
-  }
 }
