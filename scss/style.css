@@ -66,16 +66,16 @@ body {
 .page-container main {
   display: -ms-grid;
   display: grid;
-  border-radius: 8px;
-  height: 60%;
-  -ms-grid-rows: 0.45fr 0.55fr;
-      grid-template-rows: 0.45fr 0.55fr;
+  -ms-grid-rows: 45% 55%;
+      grid-template-rows: 45% 55%;
   -ms-grid-row-align: center;
       align-self: center;
   margin: auto 0;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
       grid-template-areas: "a a a  a a a" "s s s  b b b";
+  border-radius: 8px;
+  overflow: hidden;
   /* - - - - - ABOUT AREA - - - - - */
   /* - - - - - SUBSCRIBE AREA - - - - - */
   /* - - - - - BENEFITS AREA - - - - - */

@@ -55,15 +55,15 @@ body {
   /* - - - - - MAIN - - - - - */
   main {
     display: grid;
-    border-radius: 8px;
-    height: 60%;
-    grid-template-rows: 0.45fr 0.55fr;
+    grid-template-rows: 45% 55%;
     align-self: center;
     margin: auto 0;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
       "a a a  a a a"
       "s s s  b b b";
+    border-radius: 8px;
+    overflow: hidden;
 
     section {
       display: flex;
@@ -98,8 +98,7 @@ body {
       p {
         margin-top: 0;
         &:first-of-type {
-          // color: lightgray;
-          color: var(--neutral-1);
+          color: var(--neutral-1); // Alternative color: light-gray
           span {
             font-size: xx-large;
             font-weight: 700;
