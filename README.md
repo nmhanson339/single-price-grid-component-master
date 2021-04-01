@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of Single Price Grid Solution](./design/single-price-grid-solution--desktop.jpg)
+![Screenshot of Single Price Grid Solution](./design/screenshot-price-grid-desktop.png)
 
 ### Links
 
