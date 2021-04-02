@@ -125,6 +125,11 @@ body {
   padding: 32px;
 }
 
+.page-container main .main-grid h1,
+.page-container main .main-grid h3 {
+  margin-top: 0;
+}
+
 .page-container main .main-grid .about {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -215,9 +220,6 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-template: "a" "s" "b";
-  }
-  .page-container main .main-grid section h3 {
-    margin-top: 0;
   }
   .page-container main .main-grid section.about p br {
     display: none;

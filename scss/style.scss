@@ -89,7 +89,10 @@ body {
         flex-direction: column;
         padding: 32px;
       }
-
+      h1,
+      h3 {
+        margin-top: 0;
+      }
       /* - - - - - ABOUT AREA - - - - - */
       .about {
         grid-area: a;
@@ -174,9 +177,6 @@ body {
             "b";
 
           section {
-            h3 {
-              margin-top: 0;
-            }
             &.about {
               p br {
                 display: none;
