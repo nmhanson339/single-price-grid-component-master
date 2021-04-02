@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Single Price Grid Solution](https://www.frontendmentor.io/solutions/single-price-grid-using-css-grid-and-sass-Jsw9S3ihX)
 - Live Site URL: [Single Price Grid Solution](https://nmhanson339.github.io/single-price-grid-component-master/)
 
 ## My process
