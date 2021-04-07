@@ -76,7 +76,7 @@ main {
     align-self: center;
     margin: auto;
     min-width: 280px; // Galaxy Fold
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "a a"
       "s b";
