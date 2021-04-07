@@ -223,9 +223,6 @@ body {
         grid-template-columns: 1fr;
     grid-template: "a" "s" "b";
   }
-  .page-container main .main-grid section.about p br {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 360px) {
