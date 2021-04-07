@@ -41,6 +41,8 @@ ul {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   margin: 0 auto;
   font-size: 16px;
@@ -60,7 +62,7 @@ body {
 /* - - - - - MAIN - - - - - */
 main {
   display: flex;
-  margin: auto 0;
+  margin: auto;
   align-self: center;
   justify-content: center;
   width: 84%;

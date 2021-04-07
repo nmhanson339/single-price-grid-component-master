@@ -46,6 +46,13 @@ ul li {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
   margin: 0 auto;
   font-size: 16px;
@@ -64,7 +71,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto 0;
+  margin: auto;
   -ms-flex-item-align: center;
       align-self: center;
   -webkit-box-pack: center;
