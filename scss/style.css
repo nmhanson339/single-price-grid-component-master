@@ -59,21 +59,8 @@ body {
   }
 }
 
-/* - - - - - PAGE CONTAINER - - - - - */
-.page-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: calc(100vh - 16px);
-  /* - - - - - MAIN - - - - - */
-  /* - - - - - FOOTER - - - - - */
-}
-
-.page-container main {
+/* - - - - - MAIN - - - - - */
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,13 +75,13 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-  .page-container main {
+  main {
     height: 100%;
     width: 100%;
   }
 }
 
-.page-container main .main-grid {
+main .main-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 45% 55%;
@@ -117,7 +104,7 @@ body {
   /* - - - - - MAIN-GRID MEDIA QUERY - - - - - */
 }
 
-.page-container main .main-grid section {
+main .main-grid section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,12 +115,12 @@ body {
   padding: 32px;
 }
 
-.page-container main .main-grid h1,
-.page-container main .main-grid h2 {
+main .main-grid h1,
+main .main-grid h2 {
   margin-top: 0;
 }
 
-.page-container main .main-grid .about {
+main .main-grid .about {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -141,21 +128,21 @@ body {
   background-color: white;
 }
 
-.page-container main .main-grid .about h1 {
+main .main-grid .about h1 {
   color: var(--primary-1);
 }
 
-.page-container main .main-grid .about h2 {
+main .main-grid .about h2 {
   color: var(--primary-2);
 }
 
-.page-container main .main-grid .about p {
+main .main-grid .about p {
   color: var(--neutral-2);
   margin-top: 0;
   line-height: 1.5;
 }
 
-.page-container main .main-grid .subscribe {
+main .main-grid .subscribe {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: s;
@@ -164,24 +151,24 @@ body {
   background-color: var(--primary-1);
 }
 
-.page-container main .main-grid .subscribe p {
+main .main-grid .subscribe p {
   margin-top: 0;
 }
 
-.page-container main .main-grid .subscribe p:first-of-type sup {
+main .main-grid .subscribe p:first-of-type sup {
   font-size: inherit;
   font-weight: normal;
   color: lightgray;
 }
 
-.page-container main .main-grid .subscribe p:first-of-type span {
+main .main-grid .subscribe p:first-of-type span {
   font-size: xx-large;
   font-weight: 700;
   color: white;
   margin-right: 10px;
 }
 
-.page-container main .main-grid .subscribe a.call-to-action {
+main .main-grid .subscribe a.call-to-action {
   color: white;
   font-size: inherit;
   font-weight: 700;
@@ -200,14 +187,14 @@ body {
   transition: all ease-in-out 0.4s;
 }
 
-.page-container main .main-grid .subscribe a.call-to-action:hover {
+main .main-grid .subscribe a.call-to-action:hover {
   opacity: 0.8;
   box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.3);
 }
 
-.page-container main .main-grid .benefits {
+main .main-grid .benefits {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: b;
@@ -216,7 +203,7 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-  .page-container main .main-grid {
+  main .main-grid {
     -ms-grid-rows: 37% 31.5% 31.5%;
         grid-template-rows: 37% 31.5% 31.5%;
     -ms-grid-columns: 1fr;
@@ -226,7 +213,7 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-  .page-container main .main-grid {
+  main .main-grid {
     height: 100%;
     margin: 0;
     border-radius: 0;
@@ -234,4 +221,6 @@ body {
             box-shadow: none;
   }
 }
+
+/* - - - - - FOOTER - - - - - */
 /*# sourceMappingURL=style.css.map */
