@@ -77,7 +77,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 84%;
+  padding: 32px;
   /* - - - - - MAIN-GRID - - - - - */
 }
 
@@ -91,12 +91,11 @@ main {
 main .main-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 45% 55%;
-      grid-template-rows: 45% 55%;
+  min-width: 280px;
+  max-width: 40rem;
   -ms-grid-row-align: center;
       align-self: center;
   margin: auto;
-  min-width: 280px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "a a" "s b";
@@ -211,8 +210,6 @@ main .main-grid .benefits {
 
 @media screen and (max-width: 576px) {
   main .main-grid {
-    -ms-grid-rows: 37% 31.5% 31.5%;
-        grid-template-rows: 37% 31.5% 31.5%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-template: "a" "s" "b";

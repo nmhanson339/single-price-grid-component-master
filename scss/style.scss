@@ -65,7 +65,8 @@ main {
   margin: auto;
   align-self: center;
   justify-content: center;
-  width: 84%;
+  // width: 84%; // change to max-width in rems ??s
+  padding: 32px;
   @media screen and (max-width: 360px) {
     height: 100%;
     width: 100%;
@@ -74,10 +75,11 @@ main {
   /* - - - - - MAIN-GRID - - - - - */
   .main-grid {
     display: grid;
-    grid-template-rows: 45% 55%;
+    // grid-template-rows: 45% 55%;
+    min-width: 280px; // Galaxy Fold
+    max-width: 40rem;
     align-self: center;
     margin: auto;
-    min-width: 280px; // Galaxy Fold
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "a a"
@@ -174,20 +176,12 @@ main {
     /* - - - - - MAIN-GRID MEDIA QUERY - - - - - */
     @media screen and (max-width: 576px) {
       & {
-        grid-template-rows: 37% 31.5% 31.5%;
+        // grid-template-rows: 37% 31.5% 31.5%;
         grid-template-columns: 1fr;
         grid-template:
           "a"
           "s"
           "b";
-
-        // section {
-        //   &.about {
-        //     p br {
-        //       display: none;
-        //     }
-        //   }
-        // }
       }
     }
 
