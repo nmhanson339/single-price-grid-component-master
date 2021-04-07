@@ -103,7 +103,7 @@ body {
   min-width: 280px;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-      grid-template-areas: "a a a  a a a" "s s s  b b b";
+      grid-template-areas: "a a" "s b";
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.3);
@@ -134,7 +134,7 @@ body {
 .page-container main .main-grid .about {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
+  -ms-grid-column-span: 2;
   grid-area: a;
   background-color: white;
 }
@@ -156,7 +156,6 @@ body {
 .page-container main .main-grid .subscribe {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: s;
   color: white;
   font-weight: 500;
@@ -208,8 +207,7 @@ body {
 
 .page-container main .main-grid .benefits {
   -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 3;
+  -ms-grid-column: 2;
   grid-area: b;
   color: white;
   background-color: var(--primary-1-light);
