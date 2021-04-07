@@ -121,6 +121,11 @@ main .main-grid section {
   padding: 32px;
 }
 
+main .main-grid section h2 {
+  margin-bottom: 1em;
+  font-size: 1.17em;
+}
+
 main .main-grid h1,
 main .main-grid h2 {
   margin-top: 0;
