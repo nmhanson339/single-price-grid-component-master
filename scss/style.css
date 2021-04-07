@@ -46,6 +46,8 @@ ul li {
 }
 
 body {
+  height: 100vh;
+  margin: 0 auto;
   font-size: 16px;
   background-color: var(--neutral-1);
   font-family: "Karla", sans-serif;
