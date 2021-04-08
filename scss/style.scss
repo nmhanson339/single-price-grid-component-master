@@ -170,6 +170,13 @@ main {
       grid-area: b;
       color: white;
       background-color: var(--primary-1-light);
+      ul {
+        margin-top: 0;
+        li {
+          font-size: 0.875; // 14px
+          line-height: 1.5;
+        }
+      }
     }
 
     /* - - - - - MAIN-GRID MEDIA QUERY - - - - - */

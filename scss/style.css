@@ -212,6 +212,15 @@ main .main-grid .benefits {
   background-color: var(--primary-1-light);
 }
 
+main .main-grid .benefits ul {
+  margin-top: 0;
+}
+
+main .main-grid .benefits ul li {
+  font-size: 0.875;
+  line-height: 1.5;
+}
+
 @media screen and (max-width: 576px) {
   main .main-grid {
     -ms-grid-columns: 1fr;
