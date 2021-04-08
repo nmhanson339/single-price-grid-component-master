@@ -43,21 +43,15 @@ ul {
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   font-size: 16px;
   background-color: var(--neutral-1);
   font-family: "Karla", sans-serif;
-  @media screen and (max-width: 360px) {
-    margin: 0;
-  }
+  // @media screen and (max-width: 360px) {
+  //   margin: 0;
+  // }
 }
-
-// /* - - - - - PAGE CONTAINER - - - - - */
-// .page-container {
-//   display: flex;
-//   flex-direction: column;
-//   height: calc(100vh - 16px);
 
 /* - - - - - MAIN - - - - - */
 main {
@@ -202,4 +196,3 @@ main {
 }
 
 /* - - - - - FOOTER - - - - - */
-// } // .page-container

@@ -53,17 +53,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   font-size: 16px;
   background-color: var(--neutral-1);
   font-family: "Karla", sans-serif;
-}
-
-@media screen and (max-width: 360px) {
-  body {
-    margin: 0;
-  }
 }
 
 /* - - - - - MAIN - - - - - */
