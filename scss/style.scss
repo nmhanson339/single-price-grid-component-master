@@ -48,9 +48,6 @@ body {
   font-size: 16px;
   background-color: var(--neutral-1);
   font-family: "Karla", sans-serif;
-  // @media screen and (max-width: 360px) {
-  //   margin: 0;
-  // }
 }
 
 /* - - - - - MAIN - - - - - */
@@ -59,7 +56,6 @@ main {
   margin: auto;
   align-self: center;
   justify-content: center;
-  // width: 84%; // change to max-width in rems ??s
   padding: 32px;
   @media screen and (max-width: 360px) {
     height: 100%;
@@ -184,14 +180,14 @@ main {
       }
     }
 
-    @media screen and (max-width: 360px) {
-      & {
-        height: 100%;
-        margin: 0;
-        border-radius: 0;
-        box-shadow: none;
-      }
-    }
+    // @media screen and (max-width: 360px) {
+    //   & {
+    //     height: 100%;
+    //     margin: 0;
+    //     border-radius: 0;
+    //     box-shadow: none;
+    //   }
+    // }
   }
 }
 
