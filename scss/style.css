@@ -245,6 +245,12 @@ main .main-grid .benefits ul li {
     font-size: 13px;
     line-height: 2;
   }
+  main .main-grid .benefits ul {
+    margin: 0;
+  }
+  main .main-grid .benefits ul li {
+    font-size: 13px;
+  }
 }
 
 /* - - - - - FOOTER - - - - - */
