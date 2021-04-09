@@ -194,13 +194,15 @@ main {
       & {
         section {
           padding: 24px;
-          h1 {
-            font-size: 1.17rem;
-            margin-bottom: 1rem;
-          }
-          h2 {
-            font-size: 1rem;
-            margin-bottom: 1.33rem;
+          &.about {
+            h1 {
+              font-size: 1.17rem;
+              margin-bottom: 1rem;
+            }
+            h2 {
+              font-size: 1rem;
+              margin-bottom: 1.33rem;
+            }
           }
         }
 

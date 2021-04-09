@@ -231,11 +231,11 @@ main .main-grid .benefits ul li {
   main .main-grid section {
     padding: 24px;
   }
-  main .main-grid section h1 {
+  main .main-grid section.about h1 {
     font-size: 1.17rem;
     margin-bottom: 1rem;
   }
-  main .main-grid section h2 {
+  main .main-grid section.about h2 {
     font-size: 1rem;
     margin-bottom: 1.33rem;
   }
