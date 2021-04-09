@@ -65,7 +65,6 @@ main {
   /* - - - - - MAIN-GRID - - - - - */
   .main-grid {
     display: grid;
-    // grid-template-rows: 45% 55%;
     min-width: 280px; // Galaxy Fold
     max-width: 40rem;
     align-self: center;
@@ -81,8 +80,8 @@ main {
     -moz-box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.3);
 
     section {
-      display: flex;
-      flex-direction: column;
+      // display: flex;
+      // flex-direction: column;
       padding: 2rem; // 32px
       h1,
       h2 {
@@ -118,6 +117,8 @@ main {
     /* - - - - - SUBSCRIBE AREA - - - - - */
     .subscribe {
       grid-area: s;
+      display: flex;
+      flex-direction: column;
       color: white;
       background-color: var(--primary-1);
 

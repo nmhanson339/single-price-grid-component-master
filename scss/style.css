@@ -105,13 +105,6 @@ main .main-grid {
 }
 
 main .main-grid section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 2rem;
 }
 
@@ -156,6 +149,13 @@ main .main-grid .subscribe {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: white;
   background-color: var(--primary-1);
 }
