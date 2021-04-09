@@ -112,7 +112,7 @@ main .main-grid section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 32px;
+  padding: 2rem;
 }
 
 main .main-grid section h1,
@@ -157,7 +157,6 @@ main .main-grid .subscribe {
   -ms-grid-column: 1;
   grid-area: s;
   color: white;
-  font-weight: 500;
   background-color: var(--primary-1);
 }
 
@@ -167,7 +166,6 @@ main .main-grid .subscribe p {
 
 main .main-grid .subscribe p:first-of-type sup {
   font-size: inherit;
-  font-weight: normal;
   color: lightgray;
 }
 

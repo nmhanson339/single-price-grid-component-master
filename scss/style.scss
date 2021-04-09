@@ -83,7 +83,7 @@ main {
     section {
       display: flex;
       flex-direction: column;
-      padding: 32px;
+      padding: 2rem; // 32px
       h1,
       h2 {
         margin-top: 0;
@@ -119,7 +119,6 @@ main {
     .subscribe {
       grid-area: s;
       color: white;
-      font-weight: 500;
       background-color: var(--primary-1);
 
       p {
@@ -127,7 +126,6 @@ main {
         &:first-of-type {
           sup {
             font-size: inherit;
-            font-weight: normal;
             color: lightgray;
           }
           span {
