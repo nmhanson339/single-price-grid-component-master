@@ -93,8 +93,8 @@ main {
         margin-bottom: 0.83rem;
       }
       h2 {
-        font-size: 1rem;
-        margin-bottom: 1.17rem;
+        font-size: 1.17rem;
+        margin-bottom: 1rem;
       }
     }
 
@@ -173,8 +173,8 @@ main {
       ul {
         margin-top: 0;
         li {
-          font-size: 0.875; // 14px
-          line-height: 1.5;
+          font-size: 0.875rem; // 14px
+          line-height: 1.5; // standard
         }
       }
     }
@@ -191,14 +191,13 @@ main {
       }
     }
 
-    // @media screen and (max-width: 360px) {
-    //   & {
-    //     height: 100%;
-    //     margin: 0;
-    //     border-radius: 0;
-    //     box-shadow: none;
-    //   }
-    // }
+    @media screen and (max-width: 375px) {
+      & {
+        section {
+          padding: 24px;
+        }
+      }
+    }
   }
 }
 
