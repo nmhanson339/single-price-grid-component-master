@@ -233,6 +233,10 @@ main .main-grid .benefits ul li {
   main .main-grid section {
     padding: 24px;
   }
+  main .main-grid .about p {
+    font-size: 13px;
+    line-height: 2;
+  }
 }
 
 /* - - - - - FOOTER - - - - - */
