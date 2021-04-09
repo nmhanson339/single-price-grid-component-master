@@ -78,10 +78,9 @@ main {
     box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.3);
+    color: white;
 
     section {
-      // display: flex;
-      // flex-direction: column;
       padding: 2rem; // 32px
       h1,
       h2 {
@@ -119,7 +118,6 @@ main {
       grid-area: s;
       display: flex;
       flex-direction: column;
-      color: white;
       background-color: var(--primary-1);
 
       p {
@@ -127,7 +125,7 @@ main {
         &:first-of-type {
           sup {
             font-size: inherit;
-            color: lightgray;
+            color: lightblue;
           }
           span {
             font-size: xx-large;
@@ -167,11 +165,11 @@ main {
     /* - - - - - BENEFITS AREA - - - - - */
     .benefits {
       grid-area: b;
-      color: white;
       background-color: var(--primary-1-light);
       ul {
         margin-top: 0;
         li {
+          color: whitesmoke;
           font-size: 0.875rem; // 14px
           line-height: 1.5; // standard
         }
@@ -181,7 +179,6 @@ main {
     /* - - - - - MAIN-GRID MEDIA QUERY - - - - - */
     @media screen and (max-width: 576px) {
       & {
-        // grid-template-rows: 37% 31.5% 31.5%;
         grid-template-columns: 1fr;
         grid-template:
           "a"
