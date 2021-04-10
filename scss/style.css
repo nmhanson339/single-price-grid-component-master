@@ -142,14 +142,14 @@ main .main-grid section h2 {
     margin-bottom: 1.33rem;
   }
   main .main-grid .about p {
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 2;
   }
   main .main-grid .benefits ul {
     margin: 0;
   }
   main .main-grid .benefits ul li {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 }
 
