@@ -99,9 +99,6 @@ main .main-grid {
   -webkit-box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.3);
   color: white;
-  /* - - - - - ABOUT AREA - - - - - */
-  /* - - - - - SUBSCRIBE AREA - - - - - */
-  /* - - - - - BENEFITS AREA - - - - - */
   /* - - - - - MAIN-GRID MEDIA QUERY - - - - - */
 }
 
@@ -122,101 +119,6 @@ main .main-grid section h1 {
 main .main-grid section h2 {
   font-size: 1.17rem;
   margin-bottom: 1rem;
-}
-
-main .main-grid .about {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: a;
-  background-color: white;
-}
-
-main .main-grid .about h1 {
-  color: var(--primary-1);
-}
-
-main .main-grid .about h2 {
-  color: var(--primary-2);
-}
-
-main .main-grid .about p {
-  color: var(--neutral-2);
-  margin-top: 0;
-  line-height: 1.5;
-}
-
-main .main-grid .subscribe {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: var(--primary-1);
-}
-
-main .main-grid .subscribe p {
-  margin-top: 0;
-}
-
-main .main-grid .subscribe p:first-of-type sup {
-  font-size: inherit;
-  color: lightblue;
-}
-
-main .main-grid .subscribe p:first-of-type span {
-  font-size: xx-large;
-  font-weight: 700;
-  color: white;
-  margin-right: 10px;
-}
-
-main .main-grid .subscribe a.call-to-action {
-  color: white;
-  font-size: inherit;
-  font-weight: 700;
-  text-align: center;
-  padding: 16px;
-  margin-top: 16px;
-  border-radius: 5px;
-  border: transparent;
-  background-color: var(--primary-2);
-  box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  opacity: 1;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
-
-main .main-grid .subscribe a.call-to-action:hover {
-  opacity: 0.8;
-  box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.3);
-}
-
-main .main-grid .benefits {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: b;
-  background-color: var(--primary-1-light);
-}
-
-main .main-grid .benefits ul {
-  margin-top: 0;
-}
-
-main .main-grid .benefits ul li {
-  color: whitesmoke;
-  font-size: 0.875rem;
-  line-height: 1.5;
 }
 
 @media screen and (max-width: 576px) {
@@ -249,6 +151,104 @@ main .main-grid .benefits ul li {
   main .main-grid .benefits ul li {
     font-size: 13px;
   }
+}
+
+/* - - - - - ABOUT AREA - - - - - */
+.about {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: a;
+  background-color: white;
+}
+
+.about h1 {
+  color: var(--primary-1);
+}
+
+.about h2 {
+  color: var(--primary-2);
+}
+
+.about p {
+  color: var(--neutral-2);
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+/* - - - - - SUBSCRIBE AREA - - - - - */
+.subscribe {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--primary-1);
+}
+
+.subscribe p {
+  margin-top: 0;
+}
+
+.subscribe p:first-of-type sup {
+  font-size: inherit;
+  color: lightblue;
+}
+
+.subscribe p:first-of-type span {
+  font-size: xx-large;
+  font-weight: 700;
+  color: white;
+  margin-right: 10px;
+}
+
+.subscribe a.call-to-action {
+  color: white;
+  font-size: inherit;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 5px;
+  border: transparent;
+  background-color: var(--primary-2);
+  box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.subscribe a.call-to-action:hover {
+  opacity: 0.8;
+  box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.3);
+}
+
+/* - - - - - BENEFITS AREA - - - - - */
+.benefits {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: b;
+  background-color: var(--primary-1-light);
+}
+
+.benefits ul {
+  margin-top: 0;
+}
+
+.benefits ul li {
+  color: whitesmoke;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 /* - - - - - FOOTER - - - - - */
